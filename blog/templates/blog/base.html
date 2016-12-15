@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<html lang ="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Nie Piszę Po Alkoholu</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+	</head>
+
+	<body>
+		<div class="page-header">
+			<h1><a href="/">Nie Piszę Po Alkoholu</a></h1>
+		</div>
+		<div class="content container">
+			<div class="row">
+
+				<div class="col-md-8">
+				{% block content %}
+				{% endblock %}
+				</div>
+
+				<div class="col-md-4">
+					<img src="obama.png" class="img-responsive" alt="Obama">
+					<div>
+						<p>Opis blabla blabla bla bla bla bla bla bla blaaal blabla bla bla</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
